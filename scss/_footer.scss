@@ -1,0 +1,33 @@
+footer {
+    @include medida(100%, 15vh);
+    background:rgb(255, 221, 137);
+    text-align: center;
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 20vh;
+    grid-template-areas: "linkeados fdp info";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    a, ul {
+        background: none;
+        text-decoration: none;
+        grid-area: linkeados;
+        font-size: small;
+        font-family: 'Caveat', cursive;
+        list-style: none; 
+        font-size: 0.8em;   }
+}
+.footer__pago {
+    grid-area: fdp;
+}
+.footer__info {
+    grid-area: info;
+    justify-content: center
+}
+
+.footer__iconos {
+    @include medida (4em, 4em);
+    margin: 2em;
+}

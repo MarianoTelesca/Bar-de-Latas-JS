@@ -1,0 +1,24 @@
+#div404 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh);
+    grid-template-areas: "texto404 img404" 
+                         "texto404 img404";
+    justify-content: space-around;
+    @include separacion(1em, 1em);
+}
+
+#texto404 {
+    border: solid 1 black;
+    grid-area: texto404;
+    @include separacion(1em, 1em);
+    p {
+        text-align: center;
+    }
+}
+
+#img404 {
+    border-radius: 20px;
+    grid-area: img404;
+    @include medida (40vw, 60vh)
+}

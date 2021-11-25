@@ -1,0 +1,123 @@
+@media (max-width: 480px) {
+    //SECCIONES
+    .section--izq {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 25vh;
+        grid-template-areas: "foto" "article";
+    }
+    .art--izq {
+        padding: 0.5em;
+    }
+    .img--izq {
+        @include medida(85vw, 35vh);
+    }    
+    .section--der {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 25vh;
+        grid-template-areas: "foti" "art";
+    }
+    .art--der {
+        padding: 0.5em;
+    }
+    .img--der {
+        @include medida(85vw, 35vh);
+    }
+
+    //nosotros.html
+    #nosotros__div {
+        background: none;
+        display: grid;
+        grid-template-columns: 1 100vw;
+        grid-template-rows: 40vh 80vh;
+        grid-template-areas: "secQs" "asideQs";
+    }
+    #nosotros__section {
+        @include medida(90vw, 35vh);
+        overflow: none;
+        grid-area: secQs;
+    }
+    #iframeHomero {
+        display: none
+    }
+    #nosotros__aside {
+        @include medida(90vw, 75vh);
+        display: inline-block;
+        margin: 0.5em;
+        overflow: none;
+    }
+    .aside__img {
+        @include medida(70vw, 50vh);
+    }
+    .aside__img--oculta {
+        display: none;
+        @include medida(70vw, 50vh);
+    }
+    footer {
+        @include medida(100%, 25vh);
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+    //SECCIONES
+    .section--izq {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 36vh 25vh;
+        grid-template-areas: "foto" "article";
+    }
+    .art--izq {
+        padding: 0.5em;
+    }
+    .img--izq {
+        @include medida(85vw, 35vh);
+    }    
+    .section--der {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 36vh 25vh;
+        grid-template-areas: "foti" "art";
+    }
+    .art--der {
+        padding: 0.5em;
+    }
+    .img--der {
+        @include medida(85vw, 35vh);
+    }
+
+    //nosotros.html
+    #nosotros__div {
+        background: none;
+        display: grid;
+        grid-template-columns: 1 100vw;
+        grid-template-rows: 40vh 80vh;
+        grid-template-areas: "secQs" "asideQs";
+    }
+    #nosotros__section {
+        @include medida(90vw, 35vh);
+        overflow: none;
+        grid-area: secQs;
+    }
+    #iframeHomero {
+        display: none
+    }
+    #nosotros__aside {
+        @include medida(90vw, 75vh);
+        display: inline-block;
+        margin: 0.5em;
+        overflow: none;
+    }
+    .aside__img {
+        @include medida(70vw, 50vh);
+    }
+
+    //Footer
+    footer {
+        @include medida(100%, 20vh);
+        justify-self: center;
+        text-align: center;
+    }
+}

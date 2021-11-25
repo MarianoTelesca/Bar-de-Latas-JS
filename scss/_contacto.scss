@@ -1,0 +1,44 @@
+.form {
+    background-color: lightyellow;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+.form .form__input, .form__consulta {
+    background: none;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    margin-right: 5vw;
+    margin-left: 5vh;
+    padding: 5vh 5vw;
+    border-bottom: solid 1px gray;
+    color: gray;
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+}
+.form .form__input {
+    width: 40%;
+}
+.form .form__option {
+    background: lightyellow;
+}
+.form .form__consulta {
+    width: 80%;
+    resize: none;
+}
+.form .form__boton {
+    border-radius: 10px;
+    padding: 1vw 3vh;
+    margin: 5em;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+.form .form__input:focus,
+.form .form__consulta:focus {
+    border-bottom: solid 3px darkgoldenrod;
+}

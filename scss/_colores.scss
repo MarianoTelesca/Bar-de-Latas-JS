@@ -1,0 +1,17 @@
+$colores: ( dorado: rgb(182, 132, 11),
+            amarillito: rgb(255, 255, 215),
+            negro: rgb(0, 0, 0),
+            transparente: rgba(0, 0, 0, 0),
+);
+
+@each $fondocolor, $color in $colores {
+    .fondo-#{$fondocolor}{
+        background-color: $color;
+    }
+}
+
+@each $letracolor, $color in $colores {
+    .letra-#{$letracolor}{
+        color: $color;
+    }
+}

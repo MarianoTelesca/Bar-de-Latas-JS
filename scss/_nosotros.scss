@@ -1,0 +1,44 @@
+#nosotros__div {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 100vh;
+    grid-template-areas: "secQs secQs asideQs";
+}
+#nosotros__section {
+    @include medida(60vw, 100vh);
+    @include separacion(1em, 1em);
+    display: inline-block;
+    border: solid 0.1em black;
+    grid-area: secQs;
+}
+#iframeHomero {
+    @include medida(55vw, 50vh);
+}
+#nosotros__aside {
+    @include medida(30vw, 100vh);
+    @include separacion(1em, 1em);
+    display: inline-block;
+    border: solid 0.1em black;
+    grid-area: asideQs;
+}
+.aside__img {
+    @include medida(25vw, 40vh);
+}
+.aside__img--oculta {
+    display: none;
+    @include medida(25vw, 40vh);
+}
+.aside__p--hover:hover img:first-child {
+    display:none
+}
+.aside__p--hover:hover img:last-child{
+    display:inline-block
+}
+
+.img__iconos {
+    @include medida (2em, 2em);
+}
+.enlace--textoComun {
+    text-decoration: none;
+}

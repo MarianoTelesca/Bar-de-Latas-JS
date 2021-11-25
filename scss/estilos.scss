@@ -1,0 +1,44 @@
+@mixin medida ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin separacion ($margen, $padding) {
+    margin: $margen;
+    padding: $padding;
+}
+@import "colores.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    background:none;
+}
+
+body {
+    background: linear-gradient(rgb(240, 194, 109), rgb(253, 253, 180));
+}
+.nav--font {
+    color: rgb(184, 134, 11);
+    font-family: 'Caveat', cursive;
+}
+h1 {
+    background: none;
+    font-weight: bolder;
+    font-size: 300%;
+    font-family: 'Caveat', cursive;
+    text-decoration: underline;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.fondoNone {
+    background: none;
+}
+
+@import "index.scss";
+@import "sections.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+@import "mediaquery.scss";
+@import "404.scss";
+@import "footer.scss";

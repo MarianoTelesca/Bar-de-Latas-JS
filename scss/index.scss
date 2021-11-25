@@ -1,0 +1,11 @@
+.carrusel__imagen {
+    border-image: round;
+    padding: 10vh;
+}
+#carrusel {
+    @include separacion(15vh 15vw, 25vw 10vh)
+}
+.carrusel--fondo {
+    background: none;
+    background-color: none;
+}

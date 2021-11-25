@@ -1,0 +1,58 @@
+.section--izq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: "foto article";
+    background-color: rgb(255, 255, 160);
+    @include separacion(0, 1em);
+}
+.art--izq {
+    grid-area: article;
+    text-align: center;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 4em;
+}
+.img--izq {
+    grid-area: foto;
+    @include medida(45vw, 65vh);
+}
+
+.section--der {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: "art foti";
+    background-color: rgb(255, 221, 137);
+    @include separacion(0, 1em);
+}
+.art--der {
+    grid-area: art;
+    text-align: center;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 4em;
+}
+.img--der {
+    grid-area: foti;
+    @include medida(45vw, 65vh);
+}
+
+
+.section--izq ul, .section--der ul {
+    list-style: none;
+    text-align: center;
+}
+.section h2, .section--izq h2 {
+    font-size: 2em;
+}
+.precio {
+    font-size: 1.5em;
+    align-content: end;
+}
+
+.section__article--font {
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 1.7;
+}
