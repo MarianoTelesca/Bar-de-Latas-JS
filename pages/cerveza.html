@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../css/estilos.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links exteriores para la incorporacion de diferentes estilos de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    
     <title>BDL / Cervezas</title>
+
     <meta name="description" content="Todas las variedades y sabores de cerveza artesanal. Elegí las que más te gusten!">
     <meta name="keywords" content="Cervezas, Variedades, Sabores, IPA, Amber, Honey, Golden, Patagonia, Andes">
 </head>
@@ -36,7 +41,7 @@
                 <a class="nav-link active" aria-current="page" href="../pages/cerveza.html">Cervezas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/packs_combos.html">Packs y Combos</a>
+                <a class="nav-link" href="../pages/combos.html">Combos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
@@ -46,6 +51,9 @@
               </li>
             </ul>
             <form class="d-flex">
+              <input class="form__boton carritoComprasShow" type="button" value="Carrito"></input>
+            </form>
+            <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-warning" type="submit">Buscar</button>
             </form>
@@ -53,19 +61,22 @@
         </div>
       </nav>
     </header>
+    <div class="carritoCompras" style="display: none;"> <!-- Carrito de compras -->
+
+    </div>
     <main>
       <h1>Cervezas</h1>
-      <section>
+      
+      <section> <!-- Section donde se crean dinamicamente los productos -->
         <div class="row row-cols-1 row-cols-md-2 g-4" id="listaCervezas">
         </div>
       </section>
-      <section></section>
     </main>
     <footer>
       <ul>
         <li><a href="../index.html">Inicio</a></li>  
         <li><a href="./cerveza.html">Cervezas</a></li>  
-        <li><a href="./packs_combos.html"> Packs y Combos </a></li>
+        <li><a href="./combos.html"> Combos </a></li>
         <li><a href="./nosotros.html">Nosotros</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
       </ul>
@@ -79,7 +90,9 @@
         <li><a href="https://www.instagram.com/bardelatas/"><img src="../imagenes/icon_ig.png" alt="Icono de instagram" class="footer__iconos"></a></li>
       </ul>
     </footer>
+    <!-- BOOTSTRAP 5.1 - JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- JQUERY 3.6 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>  
 </body>
