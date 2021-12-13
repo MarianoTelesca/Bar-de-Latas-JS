@@ -16,10 +16,6 @@ function validarForm(){
         $("#form__apellido").focus();
         return false;
     }
-    if(!$("form__#mayorEdad").is(":checked")){
-        alert("Debe confirmar que es mayor de 18 años.");
-        return false;
-    }
     if($("#form__consulta").val() == ""){
         alert("No puede dejar la consulta en blanco");
         $("#form__consulta").focus();
@@ -36,7 +32,7 @@ $(document).ready( function() {
     $("#botonEnviarForm").click( function() { 
         if(validarForm()){                      
            $("#formularioContacto").slideUp("slow");   
-           $("#formularioExitoso").append(`<div><h3> Su consulta fue enviada con exito! </h3><div>`);
+           $("#formularioExitoso").append(`<div class="form"><h3> Su consulta fue enviada con exito! </h3><div>`);
            $("#formularioExitoso").slideDown("slow");
         }
     });    

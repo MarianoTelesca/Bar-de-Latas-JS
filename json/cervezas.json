@@ -9,6 +9,22 @@
     },
     {
         "id":2,
+        "marca":"Patagonia",
+        "sabor":"Amber Lager",
+        "precio":110,
+        "imagen":"../imagenes/cerveza_patagonia.jpg",
+        "descripcion":"Es una cerveza que se caracteriza por su color dorado brillante y aroma maltoso, como a pan. IBU 18, 5.1% graduación alcoholica."
+    },
+    {
+        "id":3,
+        "marca":"Patagonia",
+        "sabor":"IPA 24.7",
+        "precio":110,
+        "imagen":"../imagenes/cerveza_patagonia.jpg",
+        "descripcion":"Es una cerveza que se caracteriza por su color dorado brillante y aroma maltoso, como a pan. IBU 18, 5.1% graduación alcoholica."
+    },
+    {
+        "id":4,
         "marca":"Andes",
         "sabor":"Roja",
         "precio":100,
@@ -16,7 +32,23 @@
         "descripcion":"Es una cerveza estilo Vienna Lager, su aroma a suave caramelo y leve lúpulo logran un balance perfecto. De color ámbar cobrizo. IBU 18, 5,1% graduación alcoholica."
     },
     {
-        "id":3,
+        "id":5,
+        "marca":"Andes",
+        "sabor":"Rubia",
+        "precio":100,
+        "imagen":"../imagenes/cervezas_andes.jpg",
+        "descripcion":"Es una cerveza estilo Vienna Lager, su aroma a suave caramelo y leve lúpulo logran un balance perfecto. De color ámbar cobrizo. IBU 18, 5,1% graduación alcoholica."
+    },
+    {
+        "id":6,
+        "marca":"Andes",
+        "sabor":"IPA",
+        "precio":100,
+        "imagen":"../imagenes/cervezas_andes.jpg",
+        "descripcion":"Es una cerveza estilo Vienna Lager, su aroma a suave caramelo y leve lúpulo logran un balance perfecto. De color ámbar cobrizo. IBU 18, 5,1% graduación alcoholica."
+    },
+    {
+        "id":7,
         "marca":"Temple",
         "sabor":"Honey",
         "precio":120,
@@ -24,7 +56,31 @@
         "descripcion":"Cerveza roja. Tiene un perfil a tostado y caramelo. De color cobrizo. 5.5% de graduación alcoholica y 24 de ibu (Amargor)."
     },
     {
-        "id":4,
+        "id":8,
+        "marca":"Temple",
+        "sabor":"Scottish",
+        "precio":120,
+        "imagen":"../imagenes/cerveza_temple.jpg",
+        "descripcion":"Cerveza roja. Tiene un perfil a tostado y caramelo. De color cobrizo. 5.5% de graduación alcoholica y 24 de ibu (Amargor)."
+    },
+    {
+        "id":9,
+        "marca":"Temple",
+        "sabor":"Wolf IPA",
+        "precio":120,
+        "imagen":"../imagenes/cerveza_temple.jpg",
+        "descripcion":"Cerveza roja. Tiene un perfil a tostado y caramelo. De color cobrizo. 5.5% de graduación alcoholica y 24 de ibu (Amargor)."
+    },
+    {
+        "id":10,
+        "marca":"Pampa Brewing Co",
+        "sabor":"Golden",
+        "precio":150,
+        "imagen":"../imagenes/cerveza_pampa.jpg",
+        "descripcion":"Sabor moderado a malta caramelo y toffee. IBU 20, 4.9% graduación alcoholica."
+    },
+    {
+        "id":11,
         "marca":"Pampa Brewing Co",
         "sabor":"Amber Ale",
         "precio":150,
@@ -32,10 +88,34 @@
         "descripcion":"Sabor moderado a malta caramelo y toffee. IBU 20, 4.9% graduación alcoholica."
     },
     {
-        "id":5,
+        "id":12,
+        "marca":"Pampa Brewing Co",
+        "sabor":"Honey",
+        "precio":150,
+        "imagen":"../imagenes/cerveza_pampa.jpg",
+        "descripcion":"Sabor moderado a malta caramelo y toffee. IBU 20, 4.9% graduación alcoholica."
+    },
+    {
+        "id":13,
         "marca":"Peñon del Aguila",
         "sabor":"Kolsch",
         "precio":160,
+        "imagen":"../imagenes/cerveza_pda.jpg",
+        "descripcion":"Estilo alemán, de la zona de Colonia. De color dorado pálido y cuerpo liviano. Presenta aromas a lúpulo y cítricos."
+    },
+    {
+        "id":14,
+        "marca":"Peñon del Aguila",
+        "sabor":"Negra",
+        "precio":160,
+        "imagen":"../imagenes/cerveza_pda.jpg",
+        "descripcion":"Estilo alemán, de la zona de Colonia. De color dorado pálido y cuerpo liviano. Presenta aromas a lúpulo y cítricos."
+    },
+    {
+        "id":15,
+        "marca":"Peñon del Aguila",
+        "sabor":"Isabella Sour",
+        "precio":200,
         "imagen":"../imagenes/cerveza_pda.jpg",
         "descripcion":"Estilo alemán, de la zona de Colonia. De color dorado pálido y cuerpo liviano. Presenta aromas a lúpulo y cítricos."
     }
