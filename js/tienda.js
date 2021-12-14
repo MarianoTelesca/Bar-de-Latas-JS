@@ -40,55 +40,55 @@ window.onload = function(){
             id: 7,
             marca: 'Pampa Brewing Co: Golden',
             precio: 150,
-            imagen: '../imagenes/cerveza_pampa.jpg'
+            imagen: '../imagenes/pampa_golden.png'
         },
         {
             id: 8,
             marca: 'Pampa Brewing Co: Amber Ale',
             precio: 150,
-            imagen: '../imagenes/cerveza_pampa.jpg'
+            imagen: '../imagenes/pampa_amber.png'
         },
         {
             id: 9,
             marca: 'Pampa Brewing Co: IPA',
             precio: 150,
-            imagen: '../imagenes/cerveza_pampa.jpg'
+            imagen: '../imagenes/pampa_ipa.png'
         },
         {
             id: 10,
             marca: 'Temple: Honey',
             precio: 120,
-            imagen: '../imagenes/cerveza_temple.jpg'
+            imagen: '../imagenes/temple_honey.png'
         },
         {
             id: 11,
             marca: 'Temple: Scottish',
             precio: 120,
-            imagen: '../imagenes/cerveza_temple.jpg'
+            imagen: '../imagenes/temple_scottish.png'
         },
         {
             id: 12,
             marca: 'Temple: Wolf Ipa',
             precio: 120,
-            imagen: '../imagenes/cerveza_temple.jpg'
+            imagen: '../imagenes/temple_ipa.png'
         },
         {
             id: 13,
             marca: 'Peñon del Aguila: Kolsch',
             precio: 160,
-            imagen: '../imagenes/cerveza_pda.jpg'
+            imagen: '../imagenes/pda_kolsch.png'
         },
         {
             id: 14,
             marca: 'Peñon del Aguila: Negra',
             precio: 160,
-            imagen: '../imagenes/cerveza_pda.jpg'
+            imagen: '../imagenes/pda_negra.png'
         },
         {
             id: 15,
             marca: 'Peñon del Aguila: IPA Beta',
             precio: 200,
-            imagen: '../imagenes/cerveza_pda.jpg'
+            imagen: '../imagenes/pda_ipa.png'
         }
     ];
 
@@ -115,9 +115,9 @@ window.onload = function(){
             const productoCardBody = document.createElement('div');
             productoCardBody.classList.add('card-body');
             // Titulo
-            const productoTitle = document.createElement('h5');
-            productoTitle.classList.add('card-title');
-            productoTitle.textContent = info.marca;
+            const productoTitulo = document.createElement('h5');
+            productoTitulo.classList.add('card-title');
+            productoTitulo.textContent = info.marca;
             // Imagen
             const productoImagen = document.createElement('img');
             productoImagen.classList.add('img-fluid');
@@ -134,7 +134,7 @@ window.onload = function(){
             productoBoton.addEventListener('click', agregarProductoAlCarrito);
             // Insertamos
             productoCardBody.appendChild(productoImagen);
-            productoCardBody.appendChild(productoTitle);
+            productoCardBody.appendChild(productoTitulo);
             productoCardBody.appendChild(productoPrecio);
             productoCardBody.appendChild(productoBoton);
             producto.appendChild(productoCardBody);
@@ -154,24 +154,20 @@ window.onload = function(){
     // Genera los productos guardados en el carrito y evita que se creen multiples en caso de mayor cantidad del producto
     function generarCarrito() {
         DOMcarrito.textContent = '';
-
         const carritoSinDuplicados = [...new Set(carrito)];
+
         carritoSinDuplicados.forEach((item) => {
-            // Obtenemos el item que necesitamos de la variable base de datos
             const miItem = cervezas.filter((itemCervezas) => {
-                // ¿Coincide las id? Solo puede existir un caso
                 return itemCervezas.id === parseInt(item);
             });
-            // Cuenta el número de veces que se repite el producto
             const numeroUnidadesItem = carrito.reduce((total, itemId) => {
-                // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
                 return itemId === item ? total += 1 : total;
             }, 0);
-            // Creamos el producto del item del carrito
             const producto = document.createElement('li');
             producto.classList.add('list-group-item', 'text-right', 'mx-2');
             producto.textContent = `${numeroUnidadesItem} x ${miItem[0].marca} - $${miItem[0].precio}`;
-            // Boton de borrar
+
+            // Se crea un boton para borrar el item del carrito
             const miBoton = document.createElement('button');
             miBoton.classList.add('btn', 'btn-danger', 'mx-5');
             miBoton.textContent = 'X';
@@ -187,7 +183,6 @@ window.onload = function(){
     // Evento para borrar un elemento del carrito y actualizar el precio
     function borrarItemCarrito(evento) {
         const id = evento.target.dataset.item;
-        // Borramos todos los productos
         carrito = carrito.filter((carritoId) => {
             return carritoId !== id;
         });
@@ -210,7 +205,7 @@ window.onload = function(){
     }
 
 
-    //Función para vaciar el carrito de comprar
+    //Función para vaciar el carrito de compras
     function vaciarCarrito() {
         carrito = [];
         generarCarrito();
@@ -230,15 +225,14 @@ window.onload = function(){
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
     }
 
+    // Si hay algo en el carrito, al recargar lo trae del localStorage
     function cargarCarritoDeLocalStorage () {
-        // ¿Existe un carrito previo guardado en LocalStorage?
         if (miLocalStorage.getItem('carrito') !== null) {
-            // Carga la información
             carrito = JSON.parse(miLocalStorage.getItem('carrito'));
         }
     }
 
-    // Eventos
+    // Evento de los botones del carrito
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
     DOMbotonComprar.addEventListener('click', finalizarCompra);
 
