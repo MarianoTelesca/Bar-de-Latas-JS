@@ -6,17 +6,21 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links externos para la incorporacion de diferentes estilos de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">    
-    <title>BDL / Contactanos</title>
+
+        <title>BDL / Contactanos</title>
     <meta name="description" content="Contactate con nosotros ante cualquier duda o pedido!">
     <meta name="keywords" content="Formulario, Contacto, Contactanos, Mensaje">
 </head>
 <body class="container-fluid">
+  <!-- Nav con los links de las diferentes págs -->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -32,7 +36,7 @@
             <a class="nav-link" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./prueba.html"> Tienda </a>
+            <a class="nav-link" href="./tienda.html"> Tienda </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
@@ -44,7 +48,9 @@
   </header>
   <main>
     <h1>CONTACTANOS!</h1>
+    <!-- Div para la aparición dinamica de el cartel de envio exitoso -->
     <div id="formularioExitoso" style="display: none;"></div>
+    <!-- Formulario de contacto -->
     <form action="" enctype="" method="post" class="form" id="formularioContacto" autocomplete="off">
       <input type="text" name="nombre" class="form__input" id="form__nombre" placeholder="Nombre">  
       <input type="text" name="apellido" class="form__input" id="form__apellido" placeholder="Apellido">
@@ -54,10 +60,11 @@
       <button type="reset" class="form__boton">Reset</button>
     </form>
   </main>
+  <!-- Footer con links, metodos de pago e icono de instagram con su respectivo link -->
   <footer>
     <ul>
       <li><a href="../index.html">Inicio</a></li>  
-      <li><a href="./prueba.html">Tienda</a></li>  
+      <li><a href="./tienda.html">Tienda</a></li>  
       <li><a href="./contacto.html">Contacto</a></li>
     </ul>
     <ul class="footer__pago">

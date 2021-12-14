@@ -32,7 +32,11 @@ $(document).ready( function() {
     $("#botonEnviarForm").click( function() { 
         if(validarForm()){                      
            $("#formularioContacto").slideUp("slow");   
-           $("#formularioExitoso").append(`<div class="form"><h3> Su consulta fue enviada con exito! </h3><div>`);
+           $("#formularioExitoso").append(`<div class="form" id="formExitoso__contenedor"><h3> Su consulta fue enviada con exito! </h3>
+                                            <img src="../imagenes/logo.jpeg" id="img__form"><div>`);
+           $("#formExitoso__contenedor").css({"height":"80vh"})   
+           $("#img__form").css({"height":"20vh",
+                                "width":"20vw"})
            $("#formularioExitoso").slideDown("slow");
         }
     });    
